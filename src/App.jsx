@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MenuSection from "./components/MenuSection";
 import ProductsSection from "./components/ProductsSection";
+import InstagramFeed from "./components/InstagramFeed";
 import VisitUs from "./components/VisitUs";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
@@ -21,6 +22,7 @@ function App() {
                 <Hero />
                 <MenuSection />
                 <ProductsSection />
+                <InstagramFeed />
                 <VisitUs />
               </>
             }
