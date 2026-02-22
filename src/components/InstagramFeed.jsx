@@ -65,10 +65,10 @@ const InstagramFeed = () => {
           transition={{ duration: 0.6 }}
           className='text-center mb-4 md:mb-6'
         >
-          <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-1'>
+          <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-0.5'>
             Follow Us
           </p>
-          <h2 className='text-[60px] font-serif font-bold text-[#2c2c2c] mb-2 md:mb-3'>
+          <h2 className='text-[60px] font-serif font-bold text-[#2c2c2c] mb-1 leading-tight'>
             @bruma.coffee
           </h2>
           <a
