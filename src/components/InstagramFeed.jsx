@@ -55,7 +55,7 @@ const instagramPosts = [
 
 const InstagramFeed = () => {
   return (
-    <section className='py-12 md:py-16 lg:py-20 bg-[#fcf7e6]'>
+    <section className='py-8 md:py-12 lg:py-14 bg-[#fcf7e6]'>
       <div className='container mx-auto px-6 md:px-8'>
         {/* Header */}
         <motion.div
@@ -63,12 +63,12 @@ const InstagramFeed = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className='text-center mb-6 md:mb-10'
+          className='text-center mb-4 md:mb-6'
         >
-          <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-1.5 md:mb-2'>
+          <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-1'>
             Follow Us
           </p>
-          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif font-bold text-[#2c2c2c] mb-3 md:mb-4'>
+          <h2 className='text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#2c2c2c] mb-2 md:mb-3'>
             @bruma.coffee
           </h2>
           <a
@@ -77,26 +77,24 @@ const InstagramFeed = () => {
             rel='noopener noreferrer'
             className='inline-flex items-center gap-2 text-[#a67c52] hover:text-[#2c2c2c] transition-colors duration-300'
           >
-            <Instagram size={18} />
-            <span className='text-xs md:text-sm tracking-wide'>
-              Follow on Instagram
-            </span>
+            <Instagram size={16} />
+            <span className='text-xs tracking-wide'>Follow on Instagram</span>
           </a>
         </motion.div>
 
         {/* Instagram Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-6 max-w-7xl mx-auto'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 max-w-7xl mx-auto'>
           {instagramPosts.map((post, index) => (
             <motion.a
               key={post.id}
               href='https://instagram.com/bruma.coffee'
               target='_blank'
               rel='noopener noreferrer'
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className='group relative aspect-square overflow-hidden rounded-md md:rounded-lg bg-gray-200'
+              transition={{ duration: 0.4, delay: index * 0.02 }}
+              className='group relative aspect-square overflow-hidden rounded-md bg-gray-200'
             >
               {/* Image */}
               <img
@@ -108,8 +106,8 @@ const InstagramFeed = () => {
               {/* Overlay on hover */}
               <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
                 <div className='flex items-center gap-2 text-white'>
-                  <Instagram size={20} />
-                  <span className='text-base md:text-lg font-medium'>
+                  <Instagram size={18} />
+                  <span className='text-sm md:text-base font-medium'>
                     {post.likes}
                   </span>
                 </div>
@@ -123,14 +121,14 @@ const InstagramFeed = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className='text-center mt-6 md:mt-10'
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className='text-center mt-4 md:mt-6'
         >
           <a
             href='https://instagram.com/bruma.coffee'
             target='_blank'
             rel='noopener noreferrer'
-            className='inline-block px-6 md:px-8 py-2.5 md:py-3 bg-[#2c2c2c] text-white font-medium text-xs md:text-sm tracking-widest uppercase rounded-full hover:bg-[#a67c52] transition-colors duration-300'
+            className='inline-block px-6 md:px-8 py-2 md:py-2.5 bg-[#2c2c2c] text-white font-medium text-xs tracking-widest uppercase rounded-full hover:bg-[#a67c52] transition-colors duration-300'
           >
             View More
           </a>
