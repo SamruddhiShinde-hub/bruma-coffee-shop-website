@@ -68,7 +68,7 @@ const InstagramFeed = () => {
           <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-1'>
             Follow Us
           </p>
-          <h2 className='text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#2c2c2c] mb-2 md:mb-3'>
+          <h2 className='text-[60px] font-serif font-bold text-[#2c2c2c] mb-2 md:mb-3'>
             @bruma.coffee
           </h2>
           <a
@@ -83,7 +83,7 @@ const InstagramFeed = () => {
         </motion.div>
 
         {/* Instagram Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 max-w-7xl mx-auto'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 max-w-4xl mx-auto'>
           {instagramPosts.map((post, index) => (
             <motion.a
               key={post.id}
