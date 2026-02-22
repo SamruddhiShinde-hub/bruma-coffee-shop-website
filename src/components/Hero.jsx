@@ -40,15 +40,26 @@ const Hero = () => {
           cup, we bring you a legacy of flavor, passion, and perfection.
         </motion.p>
 
-        <motion.a
-          href='#menu'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className='mt-8 inline-block px-8 py-3 bg-white text-black font-medium text-sm tracking-widest uppercase rounded-full hover:bg-gray-100 transition-colors duration-300'
-        >
-          EXPLORE OUR MENU
-        </motion.a>
+        <div className='flex flex-col sm:flex-row gap-4 mt-8 justify-center'>
+          <motion.a
+            href='#menu'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className='inline-block px-8 py-3 bg-white text-black font-medium text-sm tracking-widest uppercase rounded-full hover:bg-gray-100 transition-colors duration-300'
+          >
+            EXPLORE OUR MENU
+          </motion.a>
+          <motion.a
+            href='#visit'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className='inline-block px-8 py-3 bg-transparent text-white border-2 border-white font-medium text-sm tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors duration-300'
+          >
+            VISIT US
+          </motion.a>
+        </div>
       </div>
     </section>
   );
