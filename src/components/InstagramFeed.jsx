@@ -68,7 +68,7 @@ const InstagramFeed = () => {
           <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-0.5'>
             Follow Us
           </p>
-          <h2 className='text-[60px] font-serif font-bold text-[#2c2c2c] mb-1 leading-tight'>
+          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif font-bold text-[#2c2c2c] mb-1 leading-none'>
             @bruma.coffee
           </h2>
           <a

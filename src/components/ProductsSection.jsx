@@ -94,7 +94,7 @@ const ProductsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='text-[60px] font-serif font-bold text-[#2c2c2c]'
+          className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif font-bold text-[#2c2c2c] leading-none'
         >
           Explore Our Products
         </motion.h2>

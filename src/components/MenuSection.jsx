@@ -62,7 +62,7 @@ const MenuSection = () => {
           <p className='text-xs tracking-[0.3em] text-[#a67c52] uppercase mb-2'>
             OUR SELECTION
           </p>
-          <h2 className='text-[60px] font-serif font-bold text-[#2c2c2c]'>
+          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif font-bold text-[#2c2c2c] leading-none'>
             The Menu
           </h2>
         </div>
